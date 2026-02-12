@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Propuesta</title>
+</head>
+
+<body>
+
+<div class="bg-heart"></div>
+
+<div class="description">
+    <span>¿Quisieras ser mi San Valentín?</span>
+</div>
+
+<div class="buttons-container">
+    <button id="yesBtn" class="botones">Sí</button>
+    <button id="noBtn" class="botones">No, pero piénsalo</button>
+</div>
+
+
+<script>
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+
+// Botón SÍ redirige
+yesBtn.addEventListener("click", () => {
+    window.location.href = "flower.html";
+});
+
+// Botón NO desaparece
+noBtn.addEventListener("click", () => {
+    noBtn.classList.add("fade-out");
+});
+</script>
+
+</body>
+
+
+</html>
